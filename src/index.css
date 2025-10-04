@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Oswald:wght@200..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .primary-btn{
+        @apply bg-primary font-semibold text-white px-6 py-3 rounded-full
+        hover:!scale-110 hover:shadow-xl duration-300;
+    }
+
+    .secondary-btn {
+      @apply bg-secondary text-white px-6 py-3 rounded-full hover:bg-secondary-dark duration-300;
+    }
+
+    .heading {
+      @apply font-playfair text-4xl font-bold text-secondary;
+    }
+
+    .subheading {
+      @apply font-playfair text-2xl font-semibold text-secondary-light;
+    }
+
+    .paragraph {
+      @apply font-jakarta text-base text-gray-700 leading-relaxed;
+    }
+
+    .highlight {
+      @apply italic text-primary-dark;
+    }
+
+}
+
+@layer base {
+    body {
+      @apply antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      @apply font-playfair text-3xl sm:text-4xl lg:text-5xl text-secondary;
+    }
+
+    h2{
+      @apply font-playfair text-3xl sm:text-4xl lg:text-5xl text-secondary;
+    }
+
+    p {
+      @apply font-jakarta text-base leading-relaxed;
+    }
+
+    /* a {
+      @apply text-primary hover:text-primary-dark;
+    } */
+
+    blockquote {
+      @apply italic text-secondary-dark border-l-4 border-primary pl-4;
+    }
+  }
+  
+body{
+    font-family: "Playfair Display", serif;
+}
+
+.carouselHeading{
+    font-family: "Playfair Display", serif;
+}
+
+/* Crausel Slider */
+.slider-container .slick-slide img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+
+.slider-container .slick-dots{
+    bottom: 25px;
+    z-index: 10;
+}
+
+
+.slider-container .slick-dots li{
+    width: 100px;
+    height: 150px;
+}
+.slider-container .slick-dots li.slick-active img{
+
+    border: 2px solid rgb(0, 221, 255);
+}
+
+.slider-container .slick-dots img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #fff;
+  
+   
+}
+.slider-container .slick-prev{
+   left: 15px;
+   z-index: 10;
+}
+.slider-container .slick-next{
+    right: 15px;
+    z-index: 10;
+ }
+
+@media (max-width: 767px){
+    .slider-container .slick-dots li{
+        width: 75px;
+        height: 100px;
+    }
+}
+
+.shadow-b {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+
+  /* .prayer-slider .slick-dots{
+    display: flex !important;
+    justify-content: center !important;
+    gap:50px !important;
+  } */
+
+  .our-story .slick-dots {
+    bottom: -51px !important;
+  }
+
+  .video-docker video {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-docker::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+
+
+/* Custom styles for the testimonial slider */
+.teacherSlider .testimonial-slider .slick-track {
+    display: flex !important;
+    gap: 0;
+  }
+  
+  .teacherSlider .testimonial-slider .slick-slide {
+    height: inherit !important;
+    padding: 1rem 0;
+  }
+  
+  .teacherSlider .testimonial-slider .slick-slide > div {
+    height: 100%;
+  }
