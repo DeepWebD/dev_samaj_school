@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import BackgroundVideo from "../components/common/BackgroundVideo";
 import Subnav from "../components/common/Subnav";
 
@@ -86,7 +87,13 @@ const subNavbarData = [
   },
 ];
 
+
 const ExtraCarriculum = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 60);
+  })
+
   return (
     <div className="flexjustify-center flex-col items-center   mt-[80px] ">
       <BackgroundVideo videoSrc="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" />

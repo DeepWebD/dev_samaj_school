@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import DividerWithText from "../components/common/DividerWithText";
 import StyledList from "../components/common/StyledList";
 const admissionProcess = [
@@ -46,6 +47,11 @@ const fee_concession = [
   "Concession is not allowed in any other category.",
 ];
 const Admission = () => {
+  
+    useEffect(()=>{
+      window.scrollTo(0,0);
+    })
+   
   return (
     <div className="flex px-4 justify-center flex-col items-center p-2  mt-[80px]  font-bold ">
       {/* Admission */}

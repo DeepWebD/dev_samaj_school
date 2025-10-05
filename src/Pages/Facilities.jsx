@@ -1,9 +1,13 @@
+import React, { useEffect } from "react";
 import { FaBus, FaBook, FaUtensils, FaFutbol } from "react-icons/fa"; // Importing icons from react-icons
 import Transport from "../components/Transport/Transport";
 import Library from "../components/Library/Library";
 import Canteen from "../components/Canteen/Canteen";
 import Sport from "../components/Sport/Sport";
 const Facilities = () => {
+  useEffect(() => {
+    window.scrollTo(0, 60);
+  })
   return (
     <div className="flex justify-center flex-col items-center p-2  mt-[180px] ">
       <div className="font-sans bg-blue-50">
