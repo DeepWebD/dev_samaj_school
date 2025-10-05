@@ -1,5 +1,23 @@
 import { useState, useEffect, useCallback } from "react";
-
+import devSamajImage1 from '../../public/Dev_Samaj_School_002.JPG'
+import devSamajImage2 from '../../public/Dev_Samaj_School_003.JPG'
+import devSamajImage3 from '../../public/Dev_Samaj_School_004.JPG'
+import devSamajImage4 from '../../public/Dev_Samaj_School_006.JPG'
+import devSamajImage5 from '../../public/Dev_Samaj_School_007.JPG'
+import devSamajImage6 from '../../public/Dev_Samaj_School_008.JPG'
+import devSamajImage7 from '../../public/Dev_Samaj_School_010.JPG'
+import devSamajImage8 from '../../public/Dev_Samaj_School_011.JPG'
+import devSamajImage9 from '../../public/Dev_Samaj_School_012.JPG'
+import devSamajImage10 from '../../public/Dev_Samaj_School_014.JPG'
+import devSamajImage11 from '../../public/Dev_Samaj_School_015.JPG'
+import devSamajImage12 from '../../public/Dev_Samaj_School_028.JPG'
+import devSamajImage13 from '../../public/Dev_Samaj_School_018.JPG'
+import devSamajImage14 from '../../public/Dev_Samaj_School_020.JPG'
+import devSamajImage15 from '../../public/Dev_Samaj_School_021.JPG'
+import devSamajImage16 from '../../public/Dev_Samaj_School_022.JPG'
+import devSamajImage17 from '../../public/Dev_Samaj_School_023.JPG'
+import devSamajImage18 from '../../public/Dev_Samaj_School_025.JPG'
+import devSamajImage19 from '../../public/Dev_Samaj_School_027.JPG'
 
 const images = [
   {
