@@ -1,8 +1,10 @@
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { HiLocationMarker } from "react-icons/hi";
 import Logo from "../../../public/logo.png";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   // style={FooterBg}
   return (
     <div className="rounded-t-3xl">
@@ -17,9 +19,8 @@ const Footer = () => {
                 <p className="">Dev Samaj School</p>
               </div>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
-                accusamus nulla labore cumque id ipsum molestias architecto
-                voluptatum saepe ab.
+                Established in 1966, An English medium school in Nehru Nagar , Delhi, stands at Ring Road, Nehru Nagar, Delhi - 110065, nurturing young minds with excellence.
+                The name "Dev Samaj" also honors a legacy of social reform, founded in Lahore in 1887 by Pandit Shiv Narayan Agnihotri.
               </p>
               <div className="flex items-center justify-start gap-5 !mt-6">
                 <a href="#" className="hover:text-secondary duration-200">
@@ -44,25 +45,25 @@ const Footer = () => {
                 </h1>
                 <ul className="flex flex-col gap-3">
                   <li>
-                    <a href="#" className="hover:text-secondary duration-200">
+                    <a href="#" onClick={(e) => { e.preventDefault(); navigate("/"); }}>
                       Home
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-secondary duration-200">
+                    <a href="#" onClick={(e) => { e.preventDefault(); navigate("/about-devSamaj"); }}>
                       About
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-secondary duration-200">
-                      Services
+                    <a href="#" onClick={(e) => { e.preventDefault(); navigate("/contact"); }}>
+                      Contact Us
                     </a>
                   </li>
-                  <li>
-                    <a href="#" className="hover:text-secondary duration-200">
+                  {/* <li>
+                    <a href="#" >
                       Login
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className="py-8 px-4">
@@ -71,25 +72,25 @@ const Footer = () => {
                 </h1>
                 <ul className="flex flex-col gap-3">
                   <li>
-                    <a href="#" className="hover:text-secondary duration-200">
-                      Home
+                    <a href="#" onClick={(e) => { e.preventDefault(); navigate("/video"); }}>
+                      Video Gallery
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-secondary duration-200">
-                      About
+                    <a href="#"  onClick={(e) => { e.preventDefault(); navigate("/admission"); }}>
+                      Admission
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-secondary duration-200">
-                      Services
+                    <a href="#"  onClick={(e) => { e.preventDefault(); navigate("/facilities"); }}>
+                      Facilities
                     </a>
                   </li>
-                  <li>
-                    <a href="#" className="hover:text-secondary duration-200">
+                  {/* <li>
+                    <a href="#" >
                       Login
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className="py-8 px-4">
@@ -98,25 +99,25 @@ const Footer = () => {
                 </h1>
                 <ul className="flex flex-col gap-3">
                   <li>
-                    <a href="#" className="hover:text-secondary duration-200">
-                      Home
+                    <a href="#" onClick={(e) => { e.preventDefault(); navigate("/extra-curricular"); }}>
+                      Extra Curricular
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-secondary duration-200">
-                      About
+                    <a href="#" onClick={(e) => { e.preventDefault(); navigate("/images"); }}>
+                      Image Gallery
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-secondary duration-200">
-                      Services
+                    <a href="#" onClick={(e) => { e.preventDefault(); navigate("/prayers"); }}>
+                      Prayers
                     </a>
                   </li>
-                  <li>
-                    <a href="#" className="hover:text-secondary duration-200">
+                  {/* <li>
+                    <a href="#" >
                       Login
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

@@ -3,8 +3,6 @@ import  { useState } from "react";
 
 export function PrayerCard({ prayer }) {
   const [showEnglish, setShowEnglish] = useState(false);
-  console.log("prayer", prayer);
-  console.log("showEnglish", showEnglish);
 
   return (
     <div className="bg-white rounded-lg shadow-xl overflow-hidden">
@@ -21,7 +19,7 @@ export function PrayerCard({ prayer }) {
       </div>
       <div className="p-10 relative">
         <div className="space-y-4">
-          <p className="text-lg leading-4 font-medium text-gray-800 my-4">
+          <p className="text-lg leading-7 font-medium text-gray-800 my-4">
             {showEnglish ? prayer.english : prayer.hindi.split("\n").map((line, index) => (
               <span key={index}  >
                 {line.split(" ").map((word, wordIndex) => (

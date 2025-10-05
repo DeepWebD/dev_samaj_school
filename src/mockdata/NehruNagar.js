@@ -83,14 +83,14 @@ export const nehrunagar = {
     },
     imageGallery: {
       title: "Moments to Cherish",
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.`,
+      description: `Step into the vibrant world of our school through this visual journey! From classroom creativity and science experiments to sports triumphs and cultural celebrations, each photo captures the spirit, energy, and joy that make our school community so special.`,
       images: [image1, image2, image3,image4],
       button: "See More",
     },
     vidoeGallery: {
       title: "Stories in Motion",
       description:
-        "Our scheduling system allows you to select based on your free time. Lorem ipsum demo text for template. Keep track of your students class and tutoring schedules, and never miss your lectures. The best online class scheduling system with easy accessibility. Lorem ipsum is a placeholder text commonly used",
+        "Lights, camera, learning! Dive into the dynamic world of our school through videos that capture the heart of our community. From inspiring classroom moments and creative performances to exciting field trips and milestone events, each clip tells a story of curiosity, growth, and joy.",
       videoUrl: "https://www.youtube.com/watch?v=vHL8OvW19Nc",
       button: "See More",
     },

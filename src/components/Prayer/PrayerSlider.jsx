@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import PrayerCard from "./PrayerCard";
-import {prayers} from '../../mockdata/prayer'
+import {prayers} from '../../mockdata/prayers'
 const PrayerSlider = () => {
   const settings = {
     dots: true,
