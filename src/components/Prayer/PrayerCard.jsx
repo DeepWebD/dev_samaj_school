@@ -19,7 +19,7 @@ const PrayerCard = ({ prayer }) => {
             {/* <span className="text-primary"> Choices</span> */}
           </h2>
           <p className="mt-4 text-gray-600 font-extralight">
-           {prayer?.english}
+           {prayer?.hindi}
           </p>
           {/* <div className="mt-8">
             <p

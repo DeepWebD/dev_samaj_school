@@ -19,17 +19,8 @@ export function PrayerCard({ prayer }) {
       </div>
       <div className="p-10 relative">
         <div className="space-y-4">
-          <p className="text-lg leading-7 font-medium text-gray-800 my-4">
-            {showEnglish ? prayer.english : prayer.hindi.split("\n").map((line, index) => (
-              <span key={index}  >
-                {line.split(" ").map((word, wordIndex) => (
-                  <span key={wordIndex} className="mx-4">
-                    {word}
-                  </span>
-                ))}
-                <br />
-              </span>
-            ))}
+          <p className="text-lg leading-10 font-light text-gray-800 my-4">
+            {showEnglish ? prayer.english : prayer.hindi}
           </p>
           {/* <p className="text-sm text-gray-600">
             {showEnglish ? prayer.meaningEnglish : prayer.meaningHindi}
