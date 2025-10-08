@@ -38,6 +38,7 @@ const Navigation = () => {
   const pathname = window.location.pathname;
 
   const handleNavHover = (e) => {
+    e.preventDefault();
     dispatch(setShowNavCard(true));
     navbarData.map((item) => {
       if (item.id === e.target.id) {
@@ -142,9 +143,9 @@ const Navigation = () => {
   };
 
   useEffect(() => {
-    document.addEventListener("click", handleClickOutside);
+    document.addEventListener("dblclick", handleClickOutside);
     return () => {
-      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("dblclick", handleClickOutside);
     };
   }, []);
 
@@ -258,7 +259,7 @@ const Navigation = () => {
                       href="#"
                       id={item.id}
                       className={`${navConfig.navTetxColor} hover:border-b-[1px] font-bold mx-3 py-2 text-medium `}
-                      onMouseEnter={handleNavHover}
+                      onClick={(e)=>handleNavHover(e)}
                       // onMouseLeave={handleNavCardMouseLeave}
                     >
                       {item.text.toUpperCase()}
