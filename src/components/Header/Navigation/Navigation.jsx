@@ -211,6 +211,7 @@ const Navigation = () => {
                     href="#"
                     className="relative flex justify-center items-center text-white"
                     onClick={() => setShowLocationCard(!showLocationCard)}
+                    ref={el => { window._locationCardRef = el; }} // store ref globally for click outside
                   >
                     <p>Change</p>
                     <span>
@@ -260,7 +261,6 @@ const Navigation = () => {
                       id={item.id}
                       className={`${navConfig.navTetxColor} hover:border-b-[1px] font-bold mx-3 py-2 text-medium `}
                       onClick={(e)=>handleNavHover(e)}
-                      // onMouseLeave={handleNavCardMouseLeave}
                     >
                       {item.text.toUpperCase()}
                     </a>
@@ -305,6 +305,25 @@ const Navigation = () => {
       <ResponsiveMenu navbarData={navbarData} />
     </>
   );
+
+  // Add click outside logic for location card
+  useEffect(() => {
+    function handleClickOutsideLocationCard(event) {
+      const locationCardEl = window._locationCardRef;
+      if (
+        locationCardEl &&
+        !locationCardEl.contains(event.target)
+      ) {
+        setShowLocationCard(false);
+      }
+    }
+    if (showLocationCard) {
+      document.addEventListener("mousedown", handleClickOutsideLocationCard);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutsideLocationCard);
+    };
+  }, [showLocationCard]);
 
   return <>{navContent}</>;
 };
