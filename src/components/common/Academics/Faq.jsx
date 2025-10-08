@@ -30,6 +30,8 @@ import AccordionItem from "../AccordionItem";
 // ];
 
 const Faq = ({ faqs }) => {
+  // Remove it after first release and fix typography
+  return null
   const [openId, setOpenId] = useState("faq-1");
 
   const handleAccordionClick = (id) => {
