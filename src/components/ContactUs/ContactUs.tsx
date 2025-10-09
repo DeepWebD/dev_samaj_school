@@ -7,9 +7,9 @@ import { FaMobile } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
 const ContactUs = ({ contactUs }) => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  });
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // });
 
   const formRef = useRef(null);
   const [status, setStatus] = useState({ loading: false, success: null, message: "" });
